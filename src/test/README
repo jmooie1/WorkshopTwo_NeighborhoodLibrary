@@ -1,0 +1,63 @@
+# Book Store Application
+
+This app is a simulation of a bookstore where users can view the available books, check out books, and the check in books.
+
+## Features of this program..
+
+- This program shows the available books.
+- Shows checked out books.
+- Allows users to check out a book by entering in their name.
+- Check in a book which allows users to check in a book that they have previously checked out.
+- Lastly, it allows the users to exit the application.
+
+- Welcome to Book Store.
+  1. Press 1 to Show Available Books.
+  2. Press 2 to Show Checked out Books.
+  3. Press 3 to Exit.
+  Select an option:
+
+
+- Available Books.
+  ID: 1, ISBN: 978-8-84-529261-3, Title: The Lord of the Rings
+  ID: 2, ISBN: 978-0-721-40812-5, Title: Dracula
+  ID: 3, ISBN: 978-1-565-11770-9, Title: Of Mice and Men
+  ID: 4, ISBN: 978-0-306-40615-7, Title: To Killing a Mockingbird
+  ID: 5, ISBN: 978-0-545-01022-1, Title: Harry Potter and the Chamber of Secrets
+  ID: 6, ISBN: 978-0-261-10201-7, Title: The Hobbit
+  ID: 7, ISBN: 978-0-7432-7356-5, Title: The Great Gatsby
+  ID: 8, ISBN: 978-0-06-076489-6, Title: The Chronicles of Narnia: The Lion, the Witch and the Wardrobe
+  ID: 9, ISBN: 978-0-486-28273-4, Title: Frankenstein
+  ID: 10, ISBN: 978-1-4516-2447-6, Title: Fahrenheit 451
+  ID: 11, ISBN: 978-0-399-51263-7, Title: Lord of the Flies
+  ID: 12, ISBN: 978-0-06-083702-0, Title: The Bell Jar
+  ID: 13, ISBN: 978-0-00-675402-2, Title: The Hobbit
+  ID: 14, ISBN: 978-1-51-942559-1, Title: The Scarlet Letter
+  ID: 15, ISBN: 978-0-43-27356-5, Title: The Great Gatsby
+  ID: 16, ISBN: 978-0-55-321311-9, Title: Moby-Dick
+  ID: 17, ISBN: 978-0-15-60302-0, Title: Life of Pi
+  ID: 18, ISBN: 978-0-06-441093-9, Title: Charlotte's Web
+  ID: 19, ISBN: 978-0-39-482337-9, Title: The Lorax
+  ID: 20, ISBN: 978-0-14-240733-2, Title: The Outsiders
+
+- Checked Out Books Screen
+ID: 1, ISBN: 978-8-84-529261-3, Title: The Lord of the Rings, Checked out to: Jason
+ID: 2, ISBN: 978-0-721-40812-5, Title: Dracula, Checked out to: Jason
+ID: 3, ISBN: 978-1-565-11770-9, Title: Of Mice and Men, Checked out to: Jason
+
+- Calculator Page with error message
+Please enter the ID of the book you want to check out: 978-0-43-27356-5
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at com.ps.BookStore.checkOutBook(BookStore.java:109)
+	at com.ps.BookStore.showAvailableBooks(BookStore.java:84)
+	at com.ps.BookStore.showHomeScreen(BookStore.java:56)
+	at com.ps.BookStore.main(BookStore.java:148)
+
+-  One interesting piece of code, and description of why it is interesting to me.
+
+The addBook initializes nextId which I thought it was really cool because of how after, the nextId can add
+books to inventory using the addBook method which helps me choose what book I want after I write down the
+books available
